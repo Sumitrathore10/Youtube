@@ -11,10 +11,10 @@ const Navbar = () => {
   return (
     // navbar-part-1
 
-    <div className="w-full flex justify-between items-center py-1 px-4 ">
+    <div className="w-full flex justify-between items-center fixed top-0 bg-white py-2 px-4 z-10">
       <div className=" flex items-center space-x-7 ">
-        <button className="text-2xl cursor-pointer rounded-full hover:bg-zinc-200 p-2">
-          <RxHamburgerMenu />
+        <button className="text-2xl cursor-pointer font-light rounded-full hover:bg-zinc-200 py-2 px-3">
+          <RxHamburgerMenu  />
         </button>
         <img src={Logo} alt="Logo" className="w-[8vw] cursor-pointer " />
       </div>

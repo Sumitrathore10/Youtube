@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 8px; /* Adjust width as needed */
+  height: 8px; /* Adjust height as needed */
+  border-radius: 10px; /* Rounded corners for the scrollbar */
+  background-color: transparent; /* Make background transparent to hide arrows */
+}
+
+::-webkit-scrollbar-track {
+  background: #c4c0c0; /* Background of the track */
+  border-radius: 10px; /* Rounded corners for the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to top, black, rgb(0, 0, 0)); /* Semi-transparent color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, rgb(5, 4, 4), rgb(0, 0, 0)); /* Darker color of the scrollbar thumb on hover */
+  border-radius: 10px;
+}
+
+/* Hide up and down arrows */
+::-webkit-scrollbar-button {
+  display: none;
+}
