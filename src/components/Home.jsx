@@ -1,12 +1,12 @@
 import React from "react";
-import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
+import Vedio from "./Vedio";
 
 const Home = () => {
   return (
-    <div>
-      <Navbar  />
+    <div className="flex">
       <Sidebar />
+      <Vedio/>
     </div>
   );
 };
