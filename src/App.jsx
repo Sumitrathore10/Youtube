@@ -5,18 +5,18 @@ import { useData } from './context/Context.jsx'
 import { Routes, Route } from'react-router-dom'
 import Playingvedio from './components/Playingvedio.jsx'
 import Search from './components/Search.jsx'
+import Loder from './components/Sidebarcomponets/loder/Loder.jsx'
 
 const App = () => {
-  const {loading,data} = useData()
-  console.log(loading)
-  console.log(data)
+  const {loading} = useData()
   return (
    
-    <div>
+    <div className=''>
+      {loading && <Loder/>}
       <Navbar/>
       <Routes>
         <Route path="/" exact element={<Home />} />
-        <Route path="/vedio/:id" element={<Playingvedio />} />
+        <Route path="/video/:videoID" element={<Playingvedio />} />
         <Route path="/search/:searchQuery" element={<Search />} />
       </Routes>
     </div>

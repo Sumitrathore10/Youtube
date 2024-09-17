@@ -9,7 +9,7 @@ import Sidebarcp6 from "./Sidebarcomponets/Sidebarcp6";
 const Sidebar = () => {
   
   return (
-    <div className="w-[20%] flex flex-col mt-16  h-[calc(100vh-4rem)] overflow-y-hidden  hover:overflow-y-scroll scrollbar overflow-x-hidden py-2 px-3">
+    <div >
       {/* Sidebar part 1 */}
 
      <Sidebarcp1/>
