@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      scrollbar: {
+        hide: 'scrollbar-width: none; -ms-overflow-style: none;',
+      }
+    },
   },
   plugins: [],
 }

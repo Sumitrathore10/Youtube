@@ -45,3 +45,7 @@
     animation: spin 1s linear infinite;
   }
 }
+
+.hide-scrollbar{
+  scrollbar-width:none;
+}
